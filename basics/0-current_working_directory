@@ -1,5 +1,2 @@
-ls
-cd ..
-cd ..
 #!/bin/bash
 pwd
