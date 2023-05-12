@@ -1,2 +1,1 @@
- holbertonschool-shell
-this is for project second day 
+these are all about the shell permission
