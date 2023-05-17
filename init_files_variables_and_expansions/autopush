@@ -1,7 +1,0 @@
-#!/bin/bash
-output=$(git push 2>&1)
-username=$(echo "$output" | grep -oP '(?<=https://)(.*?)(?=:)')
-password=$(echo "$output" | grep -oP '(?<=https://.*:)(.*?)(?=@)')
-
-echo "Username: $username"
-echo "Password: $password"
