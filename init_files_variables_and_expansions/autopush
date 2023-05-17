@@ -1,0 +1,6 @@
+#!/bin/bash
+output=$(git push)
+username=$(echo "$output" | grep -oP '(?<=https://)(.*?)(?=:)')
+password=$(echo "$output" | grep -oP '(?<=https://.*:)(.*?)(?=@)')
+echo "Username: $username"
+echo "Password: $password"
