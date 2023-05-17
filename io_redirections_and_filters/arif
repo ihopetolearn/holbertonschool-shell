@@ -1,0 +1,11 @@
+#!/bin/bash
+x=5
+if [$x = 5]
+then
+	echo " i m arif paimn"
+	elif [$x -le 5]
+then
+	echo " ok im arif paiman"
+else 
+	echo "i m not arif paiman"
+fi
