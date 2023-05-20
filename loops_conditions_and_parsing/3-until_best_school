@@ -1,0 +1,8 @@
+#!/user/bin/env bash
+#this is the third task 
+i=0
+until [ $i -eq 10 ]
+do 
+	echo "Best School"
+	(( i++ ))
+done
