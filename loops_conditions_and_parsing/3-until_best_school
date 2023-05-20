@@ -1,4 +1,4 @@
-#!/user/bin/env bash
+#!/usr/bin/env bash
 #this is the third task 
 i=0
 until [ $i -eq 10 ]
