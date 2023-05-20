@@ -1,15 +1,25 @@
 #!/usr/bin/env bash
-# I m going to 7th task
-hour=1
-while [ $hour -le 12 ]
+# I m going to 7th tase
+hours=0
+minutes=1
+count=1
+
+while [ $count -le 70 ]
 do
-	echo "hour: $hour"
-minute=59
-while [ $minute -le 59 ]
-do 
-	echo "$minute"
-	((minute++))
-done
-	((hour++))
-done
+	    printf "%02d:%02d\n" $hours $minutes
+	        ((minutes++))
+
+		    if [ $minutes -eq 60 ]
+			        then
+					        ((hours++))
+						        minutes=0
+							    fi
+
+							        if [ $hours -eq 13 ]
+									    then
+										            hours=1
+											        fi
+
+												    ((count++))
+											    done | head -n 70
 	
