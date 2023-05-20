@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Theis task is the 8th task im goingto that 
+list=$(ls)
+for i in $list;
+do 
+	echo "$i" | cut -d '-' -f2
+	done 
+
