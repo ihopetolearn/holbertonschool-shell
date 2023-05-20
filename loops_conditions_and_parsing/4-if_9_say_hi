@@ -3,12 +3,12 @@
 count=1
 while [ $count -le 10 ]
 do
-	if [ $count -eq 10  ]
+	if [ $count -eq 9  ]
 	then 
-		echo "Hi"
-	elif [ $count -eq 12 ]
+		echo "Best School Hi"
+	elif [ $count -eq 10 ]
 	then
-		echo "good "
+		echo "Best School"
 	else
 		echo "Best School"
 	fi
