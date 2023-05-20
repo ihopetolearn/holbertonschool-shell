@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+Best School=1
+while $[Best School -le 11]
+do 
+	echo "Best School"
+	Best School=$((Best School+1))
+done
+
