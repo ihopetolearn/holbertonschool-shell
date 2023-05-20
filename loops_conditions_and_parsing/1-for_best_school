@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-this is about for loop and i m forbidden two others
+# this is about  loop and i m forbidden two others
 for ((i=0; i<10; i++ ))
 do 
 	echo "Best School"
