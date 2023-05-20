@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-#this is the number 5ith task 
+# This is the number 5ith task 
 count=0
-while [ $count -le 10 ]
+while [ $count -lt 10 ]
 do
 	    if [ $count -eq 3 ]
 		        then
