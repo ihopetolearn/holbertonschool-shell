@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# this is the 11th task i hope it get done quikly
+while read passwd;
+do
+	echo "$passwd" | cut -d ':' -f1,s,3.6
+done < "/etc/passwd"
