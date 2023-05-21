@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# thia ia only thw lAST one that should be complete
+awk '{ print $1, $9 }' apache-access.log
