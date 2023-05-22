@@ -1,10 +1,11 @@
-#!/usr/bin/env bash                                                                                                                                                         
-# i m going to finish it                                                                                                                                                    
-IFS=":"                                                                                                                                                                     
-# Open the /etc/passwd file for reading                                                                                                                                     
-while read -r username password uid gid info home shell; do                                                                                                                 
-	            # Display the username and home directory                                                                                                                       
-		                    echo "Username: $username"                                                                                                                                  
-				                        echo "Home Directory: $home"                                                                                                                            
-							                        echo "---------------------"                                                                                                                        
-										                done < /etc/passwdIFS=":"   
+#!/usr/bin/env bash
+# this is the only one that i got stuck 
+while IFS=":" read -r username password uid gid info home shell; do
+	  echo "Username: $username"
+	    echo "GID: $gid"
+	      echo "Home Directory: $home"
+	        echo "Shell: $shell"
+		  echo "UID's password: $password"
+		    echo "Additional info: $info"
+		      echo "---------------------"
+	      done < "/etc/passwd"
