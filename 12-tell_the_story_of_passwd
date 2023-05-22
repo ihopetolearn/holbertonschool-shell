@@ -1,13 +1,6 @@
-#!/usr/bin/env bash
-# this is the 12th task that i m doing now
 #!/usr/bin/env bash                                                                                                                                                         
-# this is the 12th task that i m doing now                                                                                                                                  
- while IFS= ":" read $USERNAM $PASSWORD $UID $GID #HOME $COMMAND/SHELL;
-	  do
-		                  echo " the $NAME is part $GID gang"                                                                                                                         
-				                                                                                                                                                                              
-				                          echo "lives in homr directory and rides $COMMAND/$SHELL"                                                                                             
-							                                                                                                                                                                              
-	                                                  echo "$UID's place is protected by password $PASSWORD"    
-		          				 echo"more user info about the user here: $'USER ID INFO"   												                                                                                                                                     		                                  done< /etc/passwd                                                                                                                           
-																				  ~                                                 i
+# this was the difficult part                                                                                                                                               
+while IFS=":" read -r username password uid gid info home shell; 
+do                                                                                                         
+  echo "the user $username is part of $gid gang,"\"lives in $home and ides #shell"\"uid's is place protected by the passcode $passwd"\ "more info about the user here:$info"                                                                                                                       
+done<"/etc/passwd"     
