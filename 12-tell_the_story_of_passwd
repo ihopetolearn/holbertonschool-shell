@@ -1,19 +1,11 @@
-# this is the 12th task that i m doing now 
-FS=':' 
-
+#!/usr/bin/env bash
+# this is the 12th task that i m doing now
 while IFS= read -r line; do
-	  read -ra fields <<< "$line"
-	    username="${fields[0]}"
-	      gid="${fields[3]}"
-	        home_directory="${fields[5]}"
-		  shell="${fields[6]}"
-		    uid_info="${fields[4]}"
-		      
-		      # Extract the password field
-		        password_field="${fields[1]}"
-			  
-			  # Extract the password from the password field
-			    password="${password_field#*:}"
-			      
-			      echo "The user $username is part of the $gid gang, lives in $home_directory and rides $shell. $gid's place is protected by the passcode $password, more info about the user here: $uid_info"
-		      done < /etc/passwd
+  read -ra fields <<< "$line"
+  username="${fields[0]}"
+  gid="${fields[3]}"
+  home_directory="${fields[5]}"
+  shell="${fields[6]}"
+  uid_info="${fields[4]}"
+  echo "The user $username is part of the $gid gang, lives in $home_directory and rides $shell. $gid's place is protected by the passcode x, more info about the user here: $uid_info"
+done < /etc/passwd 
