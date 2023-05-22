@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# this is the final task for this project
-awk '{print $1, $9}' access.log | sort | uniq -c | sort -rn | awk '{print $2, $3, $1}'
+# this is the final task fo dsjfhjkshfkjsdf fdsfhdsjf
+awk '( print $1 " " $9)' apache-access.log | sort | uniq -c | sort -rn
