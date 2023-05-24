@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # is is the only one that i got stuck                                                                                                                                     
-while IFS=":" read -r #f1 $f2 #f3 #f4 #f5 $f6 $f7; 
+while IFS=':' read -r username password uid gid info home shell; 
 do                                                                                                                       
-        echo "the user $f1 is part of $f4 gang"                                                                                                                             
-        echo "lives in $f6 and rides $f7"                                                                                                                                   
-        echo "$f3 is protected by the passcode $f2"                                                                                                                         
-        echo "more info about the user is here: $f5"                                                                                                                        
+        echo "the user $username is part of $gid gang"                                                                                                                             
+        echo "lives in $home and rides $shell"                                                                                                                                   
+        echo "$uid's place is protected by the passcode $password"                                                                                                                         
+        echo "more info about the user is here: $info"                                                                                                                        
 done </etc/passwd  
