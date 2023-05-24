@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# this ia the first task and need all the requirment tant we had in the
+echo "$$"
