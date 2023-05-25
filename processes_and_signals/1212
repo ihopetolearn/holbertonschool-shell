@@ -1,0 +1,7 @@
+#!/bin/bash
+while true
+do 
+ echo " keep running "
+ echo " press cnt +c to exit "
+ sleep 2
+done

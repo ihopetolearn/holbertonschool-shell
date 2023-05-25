@@ -10,10 +10,10 @@ function love() {
 	        exit
 	}
 
-trap "echo I hate the kill command;love" SIGTERM
-trap "echo Y U no love me?!;love" SIGINT
+trap "echo 'I hate the kill command'" 15
+trap "echo 'Y U no love me?!'" 2
 
 echo $$ >> /var/run/holbertonscript.pid
-while [ true ]; do
+while true ; do
 	    echo To infinity and beyond;
     done

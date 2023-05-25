@@ -1,0 +1,6 @@
+#!/bin/bash 
+trap "echo ' you can not kill me'" 2
+while true; do 
+	echo "i m helping you dear"
+	sleep 2
+done
