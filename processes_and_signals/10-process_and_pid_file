@@ -1,25 +1,20 @@
 #!/usr/bin/env bash
-# Using SIGNALS and management with processes.
+# Infinite loop creates file with pid, catches signal, and removes file/exits:
+# Ctrl-C (SIGINT), kill (SIGTERM), and ctrl-| (SIGQUIT)
 
-FILE="/var/run/holbertonscript.pid"
-
-function clean_up()
+rmfile_n_exit()
 {
-    rm -rf $FILE
-    if $1;
-    then
-	echo "I hate the kill command"
-    fi
-    exit
-}
+	    rm -f /var/run/holbertonscript.pid;
+	        exit
+	}
+trap "echo 'Y U no love me?!'" SIGINT
+trap "echo 'I hate the kill command'; rmfile_n_exit" SIGTERM
+trap "echo 'I hate the kill command'; rmfile_n_exit" SIGQUIT
 
-echo "$$" > $FILE
 
-trap clean_up "true" SIGTERM
-trap clean_up "false" SIGQUIT
-trap 'echo "Y U no love me?!"' SIGINT
-
-while true;
+echo $$ >> /var/run/holbertonscript.pid
+while (true)
 do
-    echo "To infinity and beyond"
-done
+	    echo 'To infinity and beyond'
+	        sleep 2
+	done
